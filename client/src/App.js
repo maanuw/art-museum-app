@@ -1,5 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * @file React frontend for the Art Museum App.
+ * @author Manav Patel <mpate136@uottawa.ca>
+ */
+
+
+import { BrowserRouter } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useTranslation, Translation, I18nextProvider } from 'react-i18next';
+
 
 function App() {
   return (
