@@ -1,0 +1,37 @@
+*{
+    font-family: 'Playfair Display', serif;
+}
+
+.row {
+    width: 100%;
+}
+.Hero {
+    background: url("../../assets/landing-image.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-txt {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-txt > h1 {
+    margin-top: 24.5%;
+    margin-left: 10%;
+    font-size: 55px;
+}
+
+.intro-txt > p {
+    margin-left: 10%;
+    padding-right: 10%;
+    font-size: 20.5px;
+}
+
+.learn-more {
+    margin-left: 10%;
+}
