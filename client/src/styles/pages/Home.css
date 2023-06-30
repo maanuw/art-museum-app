@@ -2,8 +2,7 @@
     font-family: 'Playfair Display', serif;
 }
 
-.row {
-    width: 100%;
+.inner-container {
 }
 .Hero {
     background: url("../../assets/landing-image.jpg") no-repeat center fixed;
