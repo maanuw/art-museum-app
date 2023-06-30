@@ -1,0 +1,61 @@
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+.default-btn {
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.default-btn:hover {
+    background-color: white;
+    color: black;
+    border: 0.1rem solid;
+    border-color: black;
+    transition: 1s;
+}
+
+.default-btn:focus {
+    background-color: white;
+    color: black;
+    border: 0.1rem solid;
+    border-color: black;
+    transition: 1s;
+}
+
+.default-btn:active {
+    background-color: darkgray;
+    transition: 0.1s;
+}
+
+.nav-btn {
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-btn:hover {
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.nav-btn:focus {
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.nav-btn:active {
+    background-color: darkgray;
+    transition: 0.1s;
+}
