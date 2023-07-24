@@ -1,0 +1,50 @@
+.body-container {
+    margin-top: 1.25rem;
+    padding: 0;
+    background-image: url('../../assets/landing-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.donate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.donation-options label {
+    margin: 0 10px;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgray;
+    color: black;
+    border: 5px;
+    border-color: black;
+}

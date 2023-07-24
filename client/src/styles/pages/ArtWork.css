@@ -1,0 +1,69 @@
+.artwork-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 100vw;
+    height: 50vw;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.content {
+    justify-content: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.12rem;
+    margin-left: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.5rem;
+        /* Reduce font size for smaller screens */
+    }
+
+    p {
+        font-size: 0.9rem;
+        /* Reduce font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.2rem;
+        /* Further reduce font size for smaller screens */
+    }
+
+    p {
+        font-size: 0.8rem;
+        /* Further reduce font size for smaller screens */
+    }
+}

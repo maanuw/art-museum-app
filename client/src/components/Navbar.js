@@ -4,17 +4,36 @@
  */
 
 import {useState} from 'react';
+import { useTranslation } from "react-i18next";
+import { useNavigate } from 'react-router-dom';
 import Button from './Button';
 
 import '../styles/components/Navbar.css';
 
-function Navbar() {
-
+function Navbar({style}) {
+  const navigate = useNavigate();
+  const [language, setLang] = useState("en");
+  const [t, i18n] = useTranslation();
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
+  const handleLanguageChange = () => {
+    const nextLang = language === "en" ? "fr" : "en";
+    i18n.changeLanguage(nextLang);
+    setLang(nextLang);
+  };
+
+  const onClick = (path) => {
+    navigate(path);
+  };
+
     return (
-      <nav className='navigation'>
-        <button className="hamburger" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
+      <nav className="navigation">
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -28,16 +47,46 @@ function Navbar() {
             />
           </svg>
         </button>
-        <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+        <div
+          className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }
+        >
           <ul>
             <li>
-              <Button text={'Gallery'} className={'nav-btn'}/>
+              <Button
+                text={t("Navbar.languageSwitcher")}
+                className={"nav-btn"}
+                onClick={handleLanguageChange}
+              />
             </li>
             <li>
-              <Button text={'About'} className={'nav-btn'}/>
+              <Button
+                text={t("Navbar.home")}
+                className={"nav-btn"}
+                onClick={() => navigate("/")}
+              />
             </li>
             <li>
-              <Button text={'Donate'} className={'nav-btn'}/>
+              <Button
+                text={t("Navbar.gallery")}
+                className={"nav-btn"}
+                onClick={() => navigate("/gallery")}
+              />
+            </li>
+            <li>
+              <Button
+                text={t("Navbar.about")}
+                className={"nav-btn"}
+                onClick={() => navigate("/about")}
+              />
+            </li>
+            <li>
+              <Button
+                text={t("Navbar.donate")}
+                className={"nav-btn"}
+                onClick={() => navigate("/donate")}
+              />
             </li>
           </ul>
         </div>

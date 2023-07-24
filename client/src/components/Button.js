@@ -5,9 +5,19 @@
 
 import "../styles/components/Button.css";
 
-function Button({text, className}) {
+function Button(props) {
+    const {
+        text,
+        className,
+        onClick,
+        style,
+        type,
+    } = props
+
     return (
-        <button type="button" className={className}>{text}</button>
+      <button type={type} className={className} onClick={onClick} style={style}>
+        {text}
+      </button>
     );
 }
 

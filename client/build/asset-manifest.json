@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.306be483.css",
+    "main.js": "/static/js/main.ea89369f.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/comment-donate.gif": "/static/media/comment-donate.ab9f8468ae90055eae11.gif",
+    "static/media/gallery-4.jpg": "/static/media/gallery-4.9c6de3ea8ab091d04bc3.jpg",
+    "static/media/gallery-tutorial.gif": "/static/media/gallery-tutorial.5327fb85f4bd58c7bdf0.gif",
+    "static/media/famous-italians.jpeg": "/static/media/famous-italians.b41abe1ff35ac315c43d.jpeg",
+    "static/media/landing-image.jpg": "/static/media/landing-image.9bd9aa9bbfab466a4dcb.jpg",
+    "static/media/gallery-2.jpg": "/static/media/gallery-2.073ccfb5c17001f3f963.jpg",
+    "static/media/gallery-3.jpg": "/static/media/gallery-3.63b2b0c0889e037c02cf.jpg",
+    "static/media/gallery-5.jpg": "/static/media/gallery-5.45fb5a6929659b60c574.jpg",
+    "static/media/handshake.png": "/static/media/handshake.1ad7c42c6b1cdf4b6349.png",
+    "index.html": "/index.html",
+    "main.306be483.css.map": "/static/css/main.306be483.css.map",
+    "main.ea89369f.js.map": "/static/js/main.ea89369f.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.306be483.css",
+    "static/js/main.ea89369f.js"
+  ]
+}

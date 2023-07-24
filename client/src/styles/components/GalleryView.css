@@ -1,0 +1,58 @@
+/* CSS */
+.gallery-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.artwork-item {
+    width: calc(33.33% - 20px);
+    /* 3 images per row with 20px spacing */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.artwork-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    /* Maintain a 1:1 aspect ratio (square images) */
+}
+
+.artwork-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.artwork-info {
+    background-color: rgba(6, 2, 2, 0.8);
+    padding: 10px;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.artwork-info p {
+    margin: 5px 0;
+}
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 768px) {
+    .artwork-item {
+        width: calc(50% - 20px);
+        /* 2 images per row with 20px spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .artwork-item {
+        width: 100%;
+        /* 1 image per row with full width */
+    }
+}

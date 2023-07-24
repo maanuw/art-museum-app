@@ -1,0 +1,26 @@
+.filterbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.search-button {
+    /*flex: 1;*/
+    display: flex;
+    justify-content: left;
+}
